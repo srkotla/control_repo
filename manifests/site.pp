@@ -3,6 +3,10 @@ node default {
 node 'master.puppet.vm' {
   include role::master_server
 }
+node 'centos4puppet.yzfrysrkrvjuri5cla1hti20yb.xx.internal.cloudapp.net' {
+  include role::master_server
+}
+
 node /^web/ {
   include role::app_server
 }
